@@ -1,0 +1,90 @@
+/* =====================================
+   Applies to every element on the page
+===================================== */
+*{
+    margin: 0;                 /* Removes default browser margin */
+    padding: 0;                /* Removes default browser padding */
+    box-sizing: border-box;    /* Includes padding & border inside width/height */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =====================================
+   Body Styling
+===================================== */
+body{
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 30px;
+}
+
+/* =====================================
+   Parent Container
+   Holds all cards using Flexbox
+===================================== */
+.parent{
+    display: flex;          /* Places cards in one row */
+    justify-content: center;/* Centers cards horizontally */
+    align-items: center;    /* Centers cards vertically */
+    gap: 20px;              /* Space between cards */
+    flex-wrap: wrap;        /* Moves cards to next line on small screens */
+}
+
+/* =====================================
+   Card Styling
+===================================== */
+.card{
+    width: 250px;                  /* Card width */
+    background-color: white;       /* Card background */
+    border: 1px solid #ddd;        /* Light border */
+    border-radius: 10px;           /* Rounded corners */
+    padding: 20px;                 /* Space inside card */
+    text-align: center;            /* Center text */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Shadow effect */
+    transition: 0.3s;              /* Smooth animation */
+}
+
+/* Hover Effect */
+.card:hover{
+    transform: translateY(-5px);   /* Card moves slightly upward */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* =====================================
+   Heading
+===================================== */
+.card h1{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* =====================================
+   Paragraph
+===================================== */
+.card p{
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.card img{
+  height: 100px;
+  font-weight: 10px;
+}
+
+/* =====================================
+   Button Styling
+===================================== */
+.card button{
+    padding: 10px 18px;
+    border: none;
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+.card button:hover{
+    background-color: rgb(35, 71, 180);
+}
