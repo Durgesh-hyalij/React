@@ -1,28 +1,31 @@
-import React, { useActionState, useState } from 'react'
+import React, { useState } from 'react'
 
-const App = () => {
+function App() {
+  const [num, setfirst] = useState(0)
 
-  // let num = 90;
-  const [num , setfirst] = useState(10)
-  const [user, setuser] = useState("kkkkkk")
+  function increase(){
+  setfirst(num + 1)
+}
 
-  function change(){
-    setfirst(78)
-    setuser("hjhjhjjj")
-  }
+function decrease(){
+  setfirst(num -1 )
+}
 
-  function use(){
-    setuser("jkk")
-  }
+function times5(){
+  setfirst(num + 5)
+}
+
+function clearr(){
+  setfirst(0)
+}
 
   return (
     <div>
-      
-      <h1>The number is {num}</h1>
-      <h1>The user is {user}</h1>
-      <button onClick={change}>Click me </button>
-      
-      
+      <h1>{num}</h1>
+        <button onClick={increase}>Incrasing</button>
+        <button onClick={decrease}>Decrease</button>
+        <button onClick={times5}>add 5</button>
+        <button onClick={clearr}>clear</button>
     </div>
   )
 }
