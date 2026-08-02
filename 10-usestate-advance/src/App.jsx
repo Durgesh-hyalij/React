@@ -3,14 +3,16 @@ import { useState } from 'react'
 
 const App = () => {
   
-  const change = () => {
-    console.log("Form Sumitted successfully ");
-    
+  const submitHandler = (e) => {
+      e.preventDefault()
+      console.log("Form nn1Submitted Successfully");
   }
 
   return (
     <div>
-      <form onSubmit={change}>
+      <form onSubmit={(e) => {
+        submitHandler(e)
+      }}>
         <input type='text' placeholder='Enter your Name'/>
         <button>Submit</button>
       </form>
