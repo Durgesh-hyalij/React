@@ -3,17 +3,17 @@ import { useState } from 'react'
 
 const App = () => {
   
-  const [num, setnum] = useState({user:"Durgesh"})
+  const [num, setnum] = useState([10, 20, 30])
 
   function numchange(){
-    const newNum = {...num}
-    newNum.user = "Gaurav"
-    setnum(newNum)
+    const newnum = [...num]
+    newnum.push(50)
+    setnum(newnum)
   }
 
   return (
     <div>
-      <h1>Hello World {num.user}</h1>
+      <h1>Hello World {num}</h1>
       <button onClick={numchange}>Click Me</button>
     </div>
   )
