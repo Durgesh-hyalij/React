@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 
 function App() {
-  const [num, setfirst] = useState(0)
-
+  const [num, setfirst] = useState(0)   // usf shortcut for <that></that>
+ 
   function increase(){
   setfirst(num + 1)
 }
 
-function decrease(){
+  function decrease(){
   setfirst(num -1 )
 }
 
-function times5(){
+  function times5(){
   setfirst(num + 5)
 }
 
-function clearr(){
+  function clearr(){
   setfirst(0)
 }
 

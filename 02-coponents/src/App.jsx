@@ -18,9 +18,8 @@ const App = () => {
       <div className="card2">
             <Card2/>
             <Card2/>
-            <card2/>
-            <card2/>
-            
+            <Card2/>
+            <card2/>            
       </div>
 
       <div className="Navbar">

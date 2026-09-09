@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+input, button{
+  padding: 10px 10px;
+  margin: 10px 10 px;
+}
