@@ -105,6 +105,7 @@ function App() {
   // FUNCTIONS — every core useState pattern lives here
   // ============================================================
 
+   
   // --- 6. SIMPLE UPDATE ---
   // WRONG way (never do this): count = count + 1
   // RIGHT way: always call the setter function
